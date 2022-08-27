@@ -15,6 +15,9 @@ app.post("/user", (req, res) => {
   console.log(user);
   res.json({ user });
 });
+app.get("/user", (req, res) => {
+  res.send("looks like there's no one");
+});
 
 app.listen(PORT, () => {
   console.log(`server is listening in ${PORT}`);
